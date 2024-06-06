@@ -38,3 +38,69 @@ function autoSlides() {
   
 
  setInterval(autoSlides, 10000);
+
+
+
+
+ //accordion card 
+document.addEventListener('DOMContentLoaded', function() {
+  const headers = document.querySelectorAll('.accordion-header');
+  headers.forEach(header => {
+      header.addEventListener('click', function() {
+          const accordionContent = this.nextElementSibling;
+
+          // Toggle active class on the header
+          this.classList.toggle('active');
+
+          // Toggle the accordion content
+          if (accordionContent.style.display === 'block') {
+              accordionContent.style.display = 'none';
+          } else {
+              accordionContent.style.display = 'block';
+          }
+
+          // Close other open accordion sections
+          headers.forEach(otherHeader => {
+              if (otherHeader !== header) {
+                  otherHeader.classList.remove('active');
+                  otherHeader.nextElementSibling.style.display = 'none';
+              }
+          });
+      });
+  });
+});
+
+
+
+
+
+
+
+
+
+// Vertical Scroll
+//to close and open side text
+const rules = document.querySelector('#rules');
+const sideText = document.querySelector('#side-text');
+const crossButton = document.getElementById("cross-Btn");
+const closeBtn = document.querySelector('#close-Btn');
+
+rules.addEventListener('click', () => {
+  sideText.classList.toggle('active');
+  rules.classList.toggle('active');
+  
+
+});
+
+
+closeBtn.addEventListener('click', () => {
+  sideText.classList.remove("active");
+  rules.classList.remove('active');
+});
+
+
+
+crossButton.addEventListener('click', () => {
+  sideText.classList.remove("active");
+  rules.classList.remove('active');
+});
