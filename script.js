@@ -1,3 +1,33 @@
+
+//burgermanu
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const burgerBtn = document.querySelector('#burger-btn');
+  const navlist = document.querySelector('.navlist');
+  const overlay = document.querySelector('.overlay');
+
+  burgerBtn.addEventListener('click', function () {
+      navlist.classList.toggle('active');
+      burgerBtn.classList.toggle('active');
+      overlay.classList.toggle('active');
+  });
+
+  overlay.addEventListener('click', function () {
+      navlist.classList.remove('active');
+      burgerBtn.classList.remove('active');
+      overlay.classList.remove('active');
+  });
+});
+
+
+
+
+
+
+
+
+//slider container
 let slideIndex = 1;
 showSlides(slideIndex);
 
