@@ -218,7 +218,7 @@ nav ul #main-page {
 
 
 /* tablets and up */
-@media all and (min-width:767px) {
+@media  (min-width:767px) {
     header {
         padding: 0 3rem;
     }
@@ -250,7 +250,7 @@ nav ul #main-page {
 
 
 
-@media all and (min-width:992px) {
+@media (min-width:992px) {
 
     header {
         padding: 0 4rem;
@@ -260,7 +260,7 @@ nav ul #main-page {
 
 
 
-@media all and (min-width:1200px) {
+@media (min-width:1200px) {
 
     .Logotitle a img {
         width: 18rem;
