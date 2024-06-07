@@ -12,7 +12,6 @@ function currentSlide(n) {
 }
 
 
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -30,14 +29,15 @@ function showSlides(n) {
 }
 
 
-
 // Auto-slide function
 function autoSlides() {
     plusSlides(1);
   }
   
+setInterval(autoSlides, 10000);
 
- setInterval(autoSlides, 10000);
+
+
 
 
 
