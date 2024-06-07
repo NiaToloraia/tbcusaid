@@ -82,6 +82,7 @@ header {
  height: 50px;
  position: relative;
  margin-left: auto;
+ z-index: 3;
     
 }
 
@@ -150,7 +151,7 @@ nav.active {
     width: 60%;
     z-index: 2;
     background-color: rgb(38, 36, 36);
-    display: flex;
+    padding-top: 120px;
 
 }
 
@@ -159,7 +160,6 @@ nav.active ul {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    top: 120px;
     padding-right: 2rem;
     gap:3rem;
 }
