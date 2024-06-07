@@ -150,6 +150,7 @@ nav.active {
     width: 60%;
     z-index: 2;
     background-color: rgb(38, 36, 36);
+     padding-top: 120px;
     
 
 }
@@ -159,7 +160,6 @@ nav.active ul {
     flex-direction: column;
     align-items: flex-end;
     padding-right: 2rem;
-    padding-top: 120px;
     gap:3rem;
 }
 .overlay {
